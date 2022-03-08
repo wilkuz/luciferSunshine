@@ -36,14 +36,14 @@ body {
 .header-icon-img-left, .header-icon-img-right {
     max-width: 6rem;
     border-radius: 100%;
-    /* animation: spin 2s infinite;
-    animation-timing-function: linear; */
+    animation: spin 5s infinite;
+    animation-timing-function: linear;
 }
 
-/* @keyframes spin {
+@keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-} */
+}
 
 .nav-list {
     list-style: none;
