@@ -80,7 +80,13 @@ body {
 }
 
 .album-cover-container {
-    max-width: 30em;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-info {
+    text-align: center;
+    padding-bottom: 2em;
 }
 
 
