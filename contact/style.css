@@ -222,3 +222,44 @@ body {
     font-size: 1em;
     font-family: inherit;
 }
+
+.icon-group-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.icon-group-wrapper i:hover {
+    opacity: 0.7;
+    transition: opacity 100ms;
+    cursor: pointer;
+}
+
+.icon-group-wrapper a, a:visited, a:active {
+    color: inherit;
+}
+
+.contact-form-header {
+    padding-top: 3em;
+}
+
+.form-submit {
+    padding: 1em;
+    width: 10em;
+    background-color: var(--banner-orange-text);
+    border: none;
+    box-shadow: 0px 0px 7px var(--banner-orange-text);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.form-filler {
+    height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
