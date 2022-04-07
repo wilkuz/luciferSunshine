@@ -1,15 +1,13 @@
 let song, button, amp;
 let volHistory = [];
 const playBtn = document.getElementById('play-btn');
-// const headerIconLeft = document.getElementById('header-icon-left');
-// const headerIconRight = document.getElementById('header-icon-right');
 
 function preload() {
   song = loadSound('../assets/music/Jennifer_Aniston.mp3')
 }
 
 function setup() {
-    createCanvas(250, 250);
+    createCanvas(300, 300);
     
     angleMode(DEGREES); // Change the mode to DEGREES
 
@@ -17,17 +15,20 @@ function setup() {
   }
   
 function draw() {
-  background(0);
+  background(0, 100);
   let vol = amp.getLevel();
   volHistory.push(vol);
-
+  let circleSize = 25;
+  if (vol > 0.15) {
+    circleSize = map(vol, 0.15, 0.4, 30, 50)
+  } 
   translate(width/2, height/2)
   noFill();
   beginShape();
-  let blue = map(vol, 0.1, 0.4, 50, 255);
+  let blue = map(vol, 0.1, 0.3, 50, 255);
   for (let i = 0; i < 360; i++) {
     stroke(200, 100, blue);
-    let r = map(volHistory[i], 0, 1, 10, 300);
+    let r = map(volHistory[i], 0, 1, circleSize, 300);
     let x = r * cos(i);
     let y = r * sin(i);
     vertex(x, y);
