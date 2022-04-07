@@ -51,6 +51,15 @@ body {
     animation-timing-function: linear;
 }
 
+.header-icon-container {
+    position: relative;
+}
+
+.p5Canvas {
+    position: absolute;
+    z-index: -1;
+}
+
 @keyframes spin {
     from { transform: rotate(359deg); }
     to { transform: rotate(1deg); }
@@ -82,10 +91,11 @@ body {
 }
 
 #album-cover {
-    width: 20%;
+    width: 25%;
 }
 
 .album-info-wrapper {
+    position: relative;
     text-align: center;
     margin: auto 0;
 }
@@ -247,6 +257,8 @@ main {
     .hamburger-menu-btn.open .hamburger-lines::after {
         transform: rotate(-45deg) translate(-40px, -40px);
     }
+
+    /* PAGE SPECIFIC CONTENT */
 
     .main-wrapper {
         flex-direction: column;
