@@ -29,7 +29,7 @@ body {
 }
 
 .spotify-track-embed > iframe {
-    width: 50%;
+    width: 30%;
 }
 
 .main-header {
@@ -41,7 +41,7 @@ body {
 }
 
 .header-text-img {
-    max-width: 20rem;
+    max-width: 40rem;
 }
 
 .header-icon-img-left, .header-icon-img-right {
@@ -82,7 +82,7 @@ body {
 }
 
 #album-cover {
-    width: 25%;
+    width: 20%;
 }
 
 .album-info-wrapper {
@@ -108,18 +108,28 @@ body {
 
 /* --- MAKING PAGE RESPONSIVE --- */
 
+@media screen and (max-width: 650px) {
+    .header-text-img {
+        max-width: 20rem;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     /* --- NAVIGATION --- */
+    body {
+        overflow-x: hidden;
+    }
 
     .nav-list {
         flex-direction: column;
         gap: 5em;
         font-size: 150%;
         align-items: center;
+        justify-content: center;
         background-color: #ff8549;
         color: black;
-        padding-top: 2em;
+        padding-top: 25%;
         z-index: 10;
         overflow: hidden;
     }
@@ -128,27 +138,28 @@ body {
     }
 
     .nav-mobile-hidden {
-        height: 100%;
+        height: 500%;
         background-color: #ff8549;
         top: 0;
-        position: absolute;
+        position: fixed;
         width: 60vw;
         z-index: 10;
-        transform:translateX(100vw);
+        transform:translateX(110vw);
         transition: transform 500ms;
         overflow: hidden;
     }
 
     .nav-mobile-visible {
-        height: 100%;
+        height: 500%;
         background-color: #ff8549;
         top: 0;
         transform: translateX(40vw);
-        position: absolute;
+        position: fixed;
         width: 60vw;
         box-shadow: 0 -10px 20px var(--banner-orange-text);
         transition: transform 500ms;
         z-index: 10;
+        overflow: hidden;
     }
 
     .nav-overlay-active {
@@ -221,6 +232,7 @@ body {
     .hamburger-menu-btn.open .hamburger-lines {
         transform: translateX(50px);
         background: transparent;
+        position: fixed;
     }
 
     .hamburger-menu-btn.open .hamburger-lines::before {
