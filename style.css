@@ -47,13 +47,13 @@ body {
 .header-icon-img-left, .header-icon-img-right {
     max-width: 6rem;
     border-radius: 100%;
-    animation: spin 5s infinite;
+    animation: spin 6s infinite;
     animation-timing-function: linear;
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from { transform: rotate(359deg); }
+    to { transform: rotate(1deg); }
 }
 
 .nav-list {
@@ -104,6 +104,11 @@ body {
 
 .desktop-hidden {
     display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 /* --- MAKING PAGE RESPONSIVE --- */
