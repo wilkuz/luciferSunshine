@@ -97,7 +97,7 @@ body {
 .album-info-wrapper {
     position: relative;
     text-align: center;
-    margin: auto 0;
+    margin: 2em;
 }
 
 .icon-link-wrapper {
@@ -119,6 +119,15 @@ body {
 main {
     display: flex;
     justify-content: center;
+}
+
+.play-btn {
+    margin-top: 90px;
+    padding: 2em;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* --- MAKING PAGE RESPONSIVE --- */

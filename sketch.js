@@ -10,7 +10,7 @@ function preload() {
 function setup() {
     var cnv = createCanvas(250, 250);
     cnv.parent(albumInfoWrapper)
-    cnv.position(0, 0, 'relative')
+    cnv.position(10, 150, 'absolute')
     angleMode(DEGREES); // Change the mode to DEGREES
     
     amp = new p5.Amplitude();
@@ -53,10 +53,12 @@ function draw() {
 playBtn.addEventListener('click', () => {
   if (playBtn.classList.contains('playing')) {
     song.pause();
+    playBtn.innerText = "PLAY"
     playBtn.classList.add('paused');
     playBtn.classList.remove('playing');
   } else if (playBtn.classList.contains('paused')) {
     song.play();
+    playBtn.innerText = "PAUSE"
     playBtn.classList.add('playing');
     playBtn.classList.remove('paused');
   }
