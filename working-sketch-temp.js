@@ -4,7 +4,7 @@ const playBtn = document.getElementById('play-btn');
 const albumInfoWrapper = document.querySelector('.album-info-wrapper');
 
 function preload() {
-  song = loadSound('../assets/music/Jennifer_Aniston.mp3')
+  song = loadSound('../assets/music/talkin_to_jesus.mp3')
 }
 
 function setup() {

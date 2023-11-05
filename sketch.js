@@ -24,7 +24,7 @@ if (window.innerWidth > 1000) {
   let left = ( sketch ) => {
 
     sketch.preload = () => {
-      song = sketch.loadSound('../assets/music/Jennifer_Aniston.mp3')
+      song = sketch.loadSound('../assets/music/talkin_to_jesus.mp3')
     }
 
     sketch.setup = () => {
@@ -132,7 +132,7 @@ if (window.innerWidth > 1000) {
   let middle = ( sketch ) => {
 
     sketch.preload = () => {
-      song = sketch.loadSound('../assets/music/Jennifer_Aniston.mp3')
+      song = sketch.loadSound('../assets/music/talkin_to_jesus.mp3')
     }
   
     sketch.setup = () => {
